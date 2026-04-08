@@ -142,6 +142,9 @@ import express from 'express';
 
 
 // Route params: /users/:userId route
+ app.get("/users/:userId", (req,res)=>{
+      res.json({ ok: true, userId: req.userIdNum });
+  });
 
 
 // Start the server by listening
